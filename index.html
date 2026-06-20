@@ -31,7 +31,6 @@
       line-height: 1.7;
     }
 
-    /* ── HEADER ── */
     header {
       background: var(--surface);
       border-bottom: 1px solid var(--border);
@@ -44,366 +43,122 @@
       z-index: 100;
     }
 
-    .logo-shield {
-      width: 38px;
-      height: 38px;
-      flex-shrink: 0;
-    }
+    .logo-shield { width: 38px; height: 38px; flex-shrink: 0; }
 
-    .logo-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
-    }
+    .logo-text { display: flex; flex-direction: column; line-height: 1.2; }
+    .logo-text strong { font-family: Georgia, serif; font-size: 1.15rem; color: var(--accent); letter-spacing: 0.01em; }
+    .logo-text span { font-size: 0.75rem; color: var(--text-light); letter-spacing: 0.04em; text-transform: uppercase; }
 
-    .logo-text strong {
-      font-family: Georgia, serif;
-      font-size: 1.15rem;
-      color: var(--accent);
-      letter-spacing: 0.01em;
-    }
-
-    .logo-text span {
-      font-size: 0.75rem;
-      color: var(--text-light);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    /* ── HERO ── */
-    .hero {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 56px 24px 40px;
-      text-align: center;
-    }
+    .hero { max-width: 780px; margin: 0 auto; padding: 56px 24px 40px; text-align: center; }
 
     .hero-badge {
-      display: inline-block;
-      background: var(--accent-dim);
-      color: var(--accent);
-      font-size: 0.78rem;
-      font-weight: bold;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 5px 14px;
-      border-radius: 20px;
-      margin-bottom: 22px;
+      display: inline-block; background: var(--accent-dim); color: var(--accent);
+      font-size: 0.78rem; font-weight: bold; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 20px; margin-bottom: 22px;
     }
 
-    .hero h1 {
-      font-family: Georgia, serif;
-      font-size: clamp(1.7rem, 5vw, 2.6rem);
-      font-weight: normal;
-      color: var(--text);
-      line-height: 1.3;
-      margin-bottom: 18px;
-    }
+    .hero h1 { font-family: Georgia, serif; font-size: clamp(1.7rem, 5vw, 2.6rem); font-weight: normal; color: var(--text); line-height: 1.3; margin-bottom: 18px; }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero p { font-size: 1.05rem; color: var(--text-light); max-width: 580px; margin: 0 auto 36px; }
 
-    .hero h1 em {
-      font-style: normal;
-      color: var(--accent);
-    }
+    .hero-stat-row { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-bottom: 16px; }
 
-    .hero p {
-      font-size: 1.05rem;
-      color: var(--text-light);
-      max-width: 580px;
-      margin: 0 auto 36px;
-    }
+    .stat-pill { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px 22px; text-align: center; min-width: 140px; }
+    .stat-pill strong { display: block; font-family: Georgia, serif; font-size: 1.9rem; color: var(--warn); line-height: 1; margin-bottom: 4px; }
+    .stat-pill span { font-size: 0.8rem; color: var(--text-light); }
 
-    .hero-stat-row {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      flex-wrap: wrap;
-      margin-bottom: 16px;
-    }
-
-    .stat-pill {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 14px 22px;
-      text-align: center;
-      min-width: 140px;
-    }
-
-    .stat-pill strong {
-      display: block;
-      font-family: Georgia, serif;
-      font-size: 1.9rem;
-      color: var(--warn);
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-
-    .stat-pill span {
-      font-size: 0.8rem;
-      color: var(--text-light);
-    }
-
-    /* ── INTRO FRASE ── */
     .intro-frase {
-      background: var(--warn-dim);
-      border-left: 4px solid var(--warn);
-      border-radius: 0 8px 8px 0;
-      max-width: 700px;
-      margin: 0 auto 56px;
-      padding: 16px 22px;
-      font-size: 0.95rem;
-      color: #6B3A1F;
+      background: var(--warn-dim); border-left: 4px solid var(--warn); border-radius: 0 8px 8px 0;
+      max-width: 700px; margin: 0 auto 56px; padding: 16px 22px; font-size: 0.95rem; color: #6B3A1F;
     }
 
-    /* ── SEÇÃO DE RISCOS ── */
-    .section-label {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 0 24px 16px;
-    }
+    .section-label { max-width: 780px; margin: 0 auto; padding: 0 24px 16px; }
+    .section-label h2 { font-family: Georgia, serif; font-size: 1.35rem; font-weight: normal; color: var(--text); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 6px; }
 
-    .section-label h2 {
-      font-family: Georgia, serif;
-      font-size: 1.35rem;
-      font-weight: normal;
-      color: var(--text);
-      border-bottom: 2px solid var(--accent);
-      display: inline-block;
-      padding-bottom: 6px;
-    }
+    .risks-grid { max-width: 780px; margin: 0 auto; padding: 0 24px 64px; display: flex; flex-direction: column; gap: 20px; }
 
-    .risks-grid {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 0 24px 64px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
+    .risk-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; transition: box-shadow 0.2s; }
+    .risk-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.11); }
+    .risk-card.open { border-color: var(--accent); box-shadow: 0 6px 24px rgba(0,0,0,0.12); }
 
-    /* ── CARD EXPANSÍVEL ── */
-    .risk-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      transition: box-shadow 0.2s;
-    }
+    .card-header { width: 100%; background: none; border: none; cursor: pointer; padding: 26px 28px; display: flex; align-items: center; gap: 20px; text-align: left; }
 
-    .risk-card:hover {
-      box-shadow: 0 4px 20px rgba(0,0,0,0.11);
-    }
+    .card-icon { width: 58px; height: 58px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; flex-shrink: 0; }
 
-    .risk-card.open {
-      border-color: var(--accent);
-    }
+    .card-meta { flex: 1; }
+    .card-tag { display: inline-block; font-size: 0.68rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-light); background: rgba(0,0,0,0.055); padding: 2px 9px; border-radius: 20px; margin-bottom: 5px; }
+    .card-title { font-family: Georgia, serif; font-size: 1.25rem; font-weight: normal; color: var(--text); line-height: 1.3; }
+    .card-subtitle { font-size: 0.9rem; color: var(--text-light); margin-top: 6px; }
 
-    .card-header {
-      width: 100%;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 20px 22px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      text-align: left;
-    }
+    .card-arrow { color: var(--accent); font-size: 1.2rem; transition: transform 0.3s ease; flex-shrink: 0; }
+    .risk-card.open .card-arrow { transform: rotate(180deg); }
 
-    .card-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      flex-shrink: 0;
-    }
+    .card-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+    .card-body-inner { padding: 22px 28px 28px 106px; border-top: 1px solid var(--border); }
 
-    .card-meta {
-      flex: 1;
-    }
+    @media (max-width: 500px) { .card-body-inner { padding-left: 28px; } }
 
-    .card-tag {
-      font-size: 0.7rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: var(--text-light);
-      margin-bottom: 2px;
-    }
+    .subsection { margin-bottom: 24px; }
+    .subsection h4 { font-family: Georgia, serif; font-size: 1rem; font-weight: bold; color: var(--accent); margin-bottom: 10px; display: flex; align-items: center; gap: 6px; }
 
-    .card-title {
-      font-family: Georgia, serif;
-      font-size: 1.15rem;
-      font-weight: normal;
-      color: var(--text);
-      line-height: 1.3;
-    }
+    .subsection p { font-size: 0.95rem; color: var(--text); line-height: 1.75; margin-bottom: 10px; }
 
-    .card-subtitle {
-      font-size: 0.85rem;
-      color: var(--text-light);
-      margin-top: 3px;
-    }
+    .subsection ul { margin: 8px 0 10px 20px; }
+    .subsection ul li { font-size: 0.95rem; color: var(--text); line-height: 1.75; margin-bottom: 6px; }
 
-    .card-arrow {
-      color: var(--accent);
-      font-size: 1.2rem;
-      transition: transform 0.3s ease;
-      flex-shrink: 0;
-    }
+    .info-box { background: var(--accent-dim); border-radius: 8px; padding: 14px 18px; margin-top: 10px; font-size: 0.88rem; color: #2a4e66; }
+    .warn-box { background: var(--warn-dim); border-radius: 8px; padding: 14px 18px; margin-top: 10px; font-size: 0.88rem; color: #6B3A1F; }
+    .stat-inline { font-weight: bold; color: var(--warn); }
 
-    .risk-card.open .card-arrow {
-      transform: rotate(180deg);
-    }
+    .icon-bg-red    { background: #FEE8E8; }
+    .icon-bg-blue   { background: #DFF0F9; }
+    .icon-bg-amber  { background: #FAEDE0; }
+    .icon-bg-purple { background: #EDE7F8; }
+    .icon-bg-green  { background: #E3F5E8; }
+    .icon-bg-slate  { background: #E6EAF0; }
+    .icon-bg-teal   { background: #E0F3F4; }
 
-    /* ── CONTEÚDO EXPANDIDO ── */
-    .card-body {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.4s ease;
-    }
+    .risk-card-red    { border-left: 5px solid #D03030; }
+    .risk-card-blue   { border-left: 5px solid #4A7C9E; }
+    .risk-card-amber  { border-left: 5px solid #C0703A; }
+    .risk-card-purple { border-left: 5px solid #7C5BB0; }
+    .risk-card-green  { border-left: 5px solid #3A8A4A; }
+    .risk-card-slate  { border-left: 5px solid #6B7890; }
+    .risk-card-teal   { border-left: 5px solid #318888; }
 
-    .card-body-inner {
-      padding: 0 22px 24px 84px;
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
-    }
+    .risk-card-red    .card-header { background: #FEF6F6; }
+    .risk-card-blue   .card-header { background: #F2F7FB; }
+    .risk-card-amber  .card-header { background: #FDF7F2; }
+    .risk-card-purple .card-header { background: #F6F3FB; }
+    .risk-card-green  .card-header { background: #F2FAF4; }
+    .risk-card-slate  .card-header { background: #F2F4F7; }
+    .risk-card-teal   .card-header { background: #F2FAFA; }
 
-    @media (max-width: 500px) {
-      .card-body-inner {
-        padding-left: 22px;
-      }
-    }
+    .risk-card-red.open    { border-color: #D03030; }
+    .risk-card-blue.open   { border-color: #4A7C9E; }
+    .risk-card-amber.open  { border-color: #C0703A; }
+    .risk-card-purple.open { border-color: #7C5BB0; }
+    .risk-card-green.open  { border-color: #3A8A4A; }
+    .risk-card-slate.open  { border-color: #6B7890; }
+    .risk-card-teal.open   { border-color: #318888; }
 
-    .placeholder-block {
-      background: var(--bg);
-      border: 1.5px dashed var(--border);
-      border-radius: 8px;
-      padding: 18px 20px;
-      color: var(--text-light);
-      font-size: 0.9rem;
-      font-style: italic;
-      margin-bottom: 16px;
-    }
+    .section-divider { max-width: 780px; margin: 0 auto 14px; padding: 0 24px; }
+    .section-divider hr { border: none; border-top: 1px solid var(--border); margin: 20px 0 28px; }
 
-    .subsection {
-      margin-bottom: 20px;
-    }
+    .how-to { background: var(--accent-dim); border-top: 1px solid var(--border); padding: 40px 24px; }
+    .how-to-inner { max-width: 780px; margin: 0 auto; }
+    .how-to h2 { font-family: Georgia, serif; font-size: 1.3rem; font-weight: normal; color: var(--accent); margin-bottom: 18px; }
 
-    .subsection h4 {
-      font-family: Georgia, serif;
-      font-size: 1rem;
-      font-weight: bold;
-      color: var(--accent);
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .step { background: var(--surface); border-radius: var(--radius); padding: 18px 20px; border: 1px solid var(--border); }
+    .step-num { font-family: Georgia, serif; font-size: 2rem; color: var(--accent); line-height: 1; margin-bottom: 8px; opacity: 0.4; }
+    .step p { font-size: 0.9rem; color: var(--text); }
 
-    .subsection p {
-      font-size: 0.92rem;
-      color: var(--text-light);
-      font-style: italic;
-    }
+    footer { background: var(--surface); border-top: 1px solid var(--border); padding: 28px 24px; text-align: center; }
+    footer p { font-size: 0.82rem; color: var(--text-light); line-height: 1.6; }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
 
-    /* ── CORES POR CATEGORIA ── */
-    .icon-bg-red    { background: #FEF0F0; }
-    .icon-bg-blue   { background: #EBF2F7; }
-    .icon-bg-amber  { background: #FBF3ED; }
-    .icon-bg-purple { background: #F2EEF9; }
-    .icon-bg-green  { background: #EEF6F0; }
-    .icon-bg-slate  { background: #EEF0F3; }
-    .icon-bg-teal   { background: #EAF4F4; }
-
-    /* ── SEPARADOR DE SEÇÃO ── */
-    .section-divider {
-      max-width: 780px;
-      margin: 0 auto 14px;
-      padding: 0 24px;
-    }
-
-    .section-divider hr {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 20px 0 28px;
-    }
-
-    /* ── COMO USAR ── */
-    .how-to {
-      background: var(--accent-dim);
-      border-top: 1px solid var(--border);
-      padding: 40px 24px;
-    }
-
-    .how-to-inner {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-
-    .how-to h2 {
-      font-family: Georgia, serif;
-      font-size: 1.3rem;
-      font-weight: normal;
-      color: var(--accent);
-      margin-bottom: 18px;
-    }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-    }
-
-    .step {
-      background: var(--surface);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-      border: 1px solid var(--border);
-    }
-
-    .step-num {
-      font-family: Georgia, serif;
-      font-size: 2rem;
-      color: var(--accent);
-      line-height: 1;
-      margin-bottom: 8px;
-      opacity: 0.4;
-    }
-
-    .step p {
-      font-size: 0.9rem;
-      color: var(--text);
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      padding: 28px 24px;
-      text-align: center;
-    }
-
-    footer p {
-      font-size: 0.82rem;
-      color: var(--text-light);
-      line-height: 1.6;
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* ── RESPONSIVIDADE ── */
     @media (max-width: 600px) {
       body { font-size: 17px; }
       .hero { padding: 36px 18px 28px; }
@@ -414,20 +169,12 @@
       .stat-pill strong { font-size: 1.6rem; }
     }
 
-    /* ── ACESSIBILIDADE ── */
-    @media (prefers-reduced-motion: reduce) {
-      .card-body, .card-arrow { transition: none; }
-    }
-
-    .card-header:focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: -2px;
-    }
+    @media (prefers-reduced-motion: reduce) { .card-body, .card-arrow { transition: none; } }
+    .card-header:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
   </style>
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
   <svg class="logo-shield" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <path d="M19 3L5 9V20C5 28 11.5 34.5 19 36.5C26.5 34.5 33 28 33 20V9L19 3Z" fill="#EBF2F7" stroke="#4A7C9E" stroke-width="1.5"/>
@@ -441,25 +188,14 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-badge">Com base em dados da pesquisa TIC Kids Online Brasil 2024</div>
   <h1>O que seu filho<br>encontra <em>na internet</em><br>quando você não está vendo</h1>
   <p>Um guia prático para entender os riscos digitais e saber como conversar sobre eles em casa e na escola.</p>
-
   <div class="hero-stat-row">
-    <div class="stat-pill">
-      <strong>93%</strong>
-      <span>das crianças de 9 a 17 anos usam internet no Brasil</span>
-    </div>
-    <div class="stat-pill">
-      <strong>29%</strong>
-      <span>já passaram por situações ofensivas online</span>
-    </div>
-    <div class="stat-pill">
-      <strong>81%</strong>
-      <span>têm celular próprio</span>
-    </div>
+    <div class="stat-pill"><strong>93%</strong><span>das crianças de 9 a 17 anos usam internet no Brasil</span></div>
+    <div class="stat-pill"><strong>29%</strong><span>já passaram por situações ofensivas online</span></div>
+    <div class="stat-pill"><strong>81%</strong><span>têm celular próprio</span></div>
   </div>
 </section>
 
@@ -467,13 +203,11 @@
   <strong>Por que isso importa:</strong> 31% das crianças tiveram o primeiro acesso à internet <strong>antes dos 8 anos</strong> — e 98% acessam pelo celular, tornando o monitoramento tradicional quase impossível.
 </div>
 
-<!-- RISCOS: SEÇÃO 1 — CONTATO -->
-<div class="section-label">
-  <h2>Riscos de Contato</h2>
-</div>
+<!-- SEÇÃO 1: CONTATO -->
+<div class="section-label"><h2>Riscos de Contato</h2></div>
 <div class="risks-grid">
 
-  <div class="risk-card" id="card-aliciamento">
+  <div class="risk-card risk-card-red" id="card-aliciamento">
     <button class="card-header" onclick="toggleCard('card-aliciamento')" aria-expanded="false">
       <div class="card-icon icon-bg-red">🔴</div>
       <div class="card-meta">
@@ -487,25 +221,42 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ Explicação sobre o que é o aliciamento online, como acontece nas redes sociais e aplicativos de jogos ]</div>
+          <p>O aliciamento online (também chamado de <em>grooming</em>) é o processo pelo qual um adulto cria uma relação de confiança com uma criança ou adolescente pela internet com o objetivo de exploração sexual. Ele pode ocorrer em redes sociais, jogos online, aplicativos de mensagem e até plataformas de vídeo.</p>
+          <p>O processo costuma ser gradual: o adulto começa com conversas amigáveis, oferece presentes virtuais, elogios e atenção, e aos poucos tenta isolar a criança dos pais e amigos, pedindo segredo e conteúdo íntimo.</p>
+          <div class="warn-box">⚠️ Todas as grandes redes sociais (Instagram, TikTok, WhatsApp) proíbem o uso por menores de 13 anos — mas a pesquisa mostra que 60% das crianças de 9 a 10 anos já possuem perfil em pelo menos uma dessas plataformas.</div>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Lista de comportamentos que pais e mestres devem observar na criança ]</div>
+          <ul>
+            <li>A criança esconde a tela do celular ou fecha aplicativos quando um adulto se aproxima</li>
+            <li>Passa a usar o celular em horários incomuns, como madrugada</li>
+            <li>Recebe presentes, dinheiro ou itens de jogo de pessoas que os pais não conhecem</li>
+            <li>Fica agitada, com raiva ou triste após usar o celular</li>
+            <li>Menciona um "amigo novo" que os pais nunca viram pessoalmente</li>
+            <li>Torna-se reservada e evita conversar sobre o que faz online</li>
+          </ul>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Sugestões de abordagem para abrir o diálogo sem assustar a criança ]</div>
+          <p>Comece cedo, de forma natural e sem alarme. Explique que existem pessoas que mentem sobre quem são na internet — assim como no mundo físico existem pessoas com más intenções.</p>
+          <p>Diga claramente: <em>"Se alguém online pedir fotos suas, pedir segredo ou quiser encontrar você pessoalmente, me conta imediatamente. Você não vai se meter em problema — eu estou do seu lado."</em></p>
+          <p>Reforce que a criança nunca será punida por trazer esse assunto. O medo de perder o celular é uma das principais razões pelas quais crianças não contam para os pais.</p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Medidas práticas de proteção e onde denunciar ]</div>
+          <ul>
+            <li>Configure os perfis das redes sociais do seu filho como <strong>privados</strong>, para que só pessoas conhecidas vejam o conteúdo</li>
+            <li>Ative nas configurações do Instagram e TikTok a opção que impede que desconhecidos enviem mensagens diretas</li>
+            <li>Em caso de suspeita ou ocorrência, faça um boletim de ocorrência e denuncie pelo site da <strong>SaferNet Brasil</strong>: <a href="https://new.safernet.org.br/content/denuncias" target="_blank" rel="noopener">safernet.org.br</a></li>
+            <li>Guarde capturas de tela das conversas antes de bloquear ou denunciar o perfil</li>
+          </ul>
+          <div class="info-box">📞 Disque 100 — Direitos Humanos: canal gratuito para denúncias de violência e abuso sexual infantil, 24 horas por dia.</div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="risk-card" id="card-desconhecidos">
+  <div class="risk-card risk-card-blue" id="card-desconhecidos">
     <button class="card-header" onclick="toggleCard('card-desconhecidos')" aria-expanded="false">
       <div class="card-icon icon-bg-blue">🔵</div>
       <div class="card-meta">
@@ -519,19 +270,32 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ Explicação sobre como o contato com desconhecidos acontece em redes sociais, jogos e apps de mensagem ]</div>
+          <p>A internet facilita o contato entre pessoas que nunca se viram pessoalmente. Isso tem aspectos positivos — como ampliar horizontes e fazer amizades — mas também traz riscos reais quando crianças e adolescentes não sabem distinguir quem é confiável.</p>
+          <p>Segundo a pesquisa TIC Kids Online Brasil 2024, <span class="stat-inline">43% dos adolescentes de 15 a 17 anos</span> já tiveram contato com alguém que não conheciam pessoalmente. As redes sociais (15%) e os aplicativos de mensagem (14%) foram os principais canais — seguidos por jogos online (9%), onde o contato parece mais "inocente" por acontecer dentro de um jogo.</p>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Comportamentos que indicam que a criança pode estar em contato com pessoas desconhecidas ]</div>
+          <ul>
+            <li>A criança menciona "amigos do jogo" ou "amigos da internet" que os pais não conhecem</li>
+            <li>Adiciona pessoas desconhecidas nas redes sociais com frequência</li>
+            <li>Planeja ou menciona querer se encontrar com alguém que conheceu online</li>
+            <li>Compartilha informações pessoais — endereço, escola, rotina — com essas pessoas</li>
+          </ul>
+          <div class="warn-box">🎮 Jogos online são um ponto cego para muitos pais. O chat de voz dentro de jogos como Free Fire, Roblox e Minecraft permite que adultos se aproximem de crianças de forma que parece natural e lúdica.</div>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Como explicar o risco de adicionar desconhecidos sem proibir o uso das redes ]</div>
+          <p>Evite proibir — isso tende a fazer a criança esconder o que faz. Em vez disso, use perguntas abertas: <em>"Quem são as pessoas com quem você joga online? Você sabe o nome real delas?"</em></p>
+          <p>Explique a diferença entre um colega de jogo e um amigo de verdade: pode ser divertido jogar com desconhecidos, mas compartilhar dados pessoais ou marcar encontros é outra coisa.</p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Configurações de privacidade recomendadas por plataforma ]</div>
+          <ul>
+            <li>No Instagram: <em>Configurações → Privacidade → Mensagens</em> — selecione "apenas pessoas que sigo podem me enviar mensagens"</li>
+            <li>No TikTok: <em>Configurações → Privacidade → Mensagens diretas</em> → defina como "amigos" ou "ninguém"</li>
+            <li>Em jogos: desative o chat de voz com desconhecidos nas configurações do jogo</li>
+            <li>Estabeleça uma regra clara: <strong>antes de aceitar qualquer pedido de amizade de alguém que não conhece pessoalmente, a criança fala com você primeiro</strong></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -539,20 +303,18 @@
 
 </div>
 
-<!-- RISCOS: SEÇÃO 2 — CONTEÚDO -->
+<!-- SEÇÃO 2: CONTEÚDO -->
 <div class="section-divider"><hr></div>
-<div class="section-label">
-  <h2>Riscos de Conteúdo</h2>
-</div>
+<div class="section-label"><h2>Riscos de Conteúdo</h2></div>
 <div class="risks-grid">
 
-  <div class="risk-card" id="card-pornografia">
+  <div class="risk-card risk-card-amber" id="card-pornografia">
     <button class="card-header" onclick="toggleCard('card-pornografia')" aria-expanded="false">
       <div class="card-icon icon-bg-amber">🟠</div>
       <div class="card-meta">
         <div class="card-tag">Conteúdo impróprio</div>
         <div class="card-title">Pornografia e Sexualização Precoce</div>
-        <div class="card-subtitle">Como crianças chegam a esse conteúdo e o impacto no desenvolvimento</div>
+        <div class="card-subtitle">Como crianças chegam a esse conteúdo — muitas vezes sem procurar</div>
       </div>
       <span class="card-arrow" aria-hidden="true">▾</span>
     </button>
@@ -560,25 +322,38 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ Como algoritmos recomendam conteúdo sexual progressivamente e como crianças chegam a ele mesmo sem procurar ]</div>
+          <p>O acesso a conteúdo pornográfico e sexualizado na internet pode acontecer de duas formas: por busca intencional — geralmente por curiosidade, em crianças mais velhas — ou de forma acidental, quando o algoritmo de plataformas como o TikTok recomenda conteúdos progressivamente mais explícitos com base no histórico de visualizações.</p>
+          <p>A pesquisa do Instituto Alana (2024) identificou que o TikTok recomenda vídeos em loop com base no perfil comportamental da criança, em um fenômeno chamado de <em>"toca de coelho"</em>: quanto mais tempo a criança passa assistindo a um tipo de conteúdo, mais a plataforma recomenda conteúdos similares — incluindo os de teor sexual.</p>
+          <p>A sexualização precoce afeta o desenvolvimento da criança, distorce a percepção sobre relacionamentos e cria expectativas irreais sobre o próprio corpo e o corpo do outro.</p>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Mudanças de comportamento associadas à exposição precoce a conteúdo sexual ]</div>
+          <ul>
+            <li>Uso de linguagem sexual inadequada para a idade</li>
+            <li>Comportamentos ou perguntas sobre sexo que parecem avançados demais para a faixa etária</li>
+            <li>A criança fica nervosa ou envergonhada quando alguém olha para a tela do celular</li>
+            <li>Passa a evitar vestir-se de forma confortável, comparando-se a padrões físicos de vídeos ou influencers</li>
+          </ul>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Orientações para uma conversa sobre sexualidade saudável no contexto digital ]</div>
+          <p>Se a criança viu um conteúdo sexual e veio contar, não reaja com raiva ou punição — isso vai fechar o canal de comunicação. Agradeça por ter contado e use o momento para conversar com calma sobre o que foi visto.</p>
+          <p>Para crianças mais novas, explique que esse tipo de conteúdo existe na internet mas não é adequado para elas, da mesma forma que certos filmes têm classificação etária. Para adolescentes, aborde o tema da influência dos algoritmos: <em>"O que você vê repetido vai moldando o que você acha normal — é importante questionar isso."</em></p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Ferramentas de controle parental e filtros de conteúdo ]</div>
+          <ul>
+            <li>No YouTube: ative o <strong>YouTube Kids</strong> ou o Modo Restrito nas configurações do aplicativo</li>
+            <li>No TikTok: ative o <strong>Modo Família</strong> nas configurações, que permite ao responsável controlar o conteúdo e o tempo de uso</li>
+            <li>No celular: use o controle parental do sistema — <em>Tempo de Uso</em> (iPhone) ou <em>Bem-estar Digital</em> (Android) — para bloquear aplicativos específicos em horários determinados</li>
+            <li>Mantenha o histórico de navegação visível para você enquanto a criança for pequena, com combinado prévio e transparente</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="risk-card" id="card-automutilacao">
+  <div class="risk-card risk-card-red" id="card-automutilacao">
     <button class="card-header" onclick="toggleCard('card-automutilacao')" aria-expanded="false">
       <div class="card-icon icon-bg-red">🔴</div>
       <div class="card-meta">
@@ -592,31 +367,44 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ Como comunidades online normalizam a automutilação e como esse conteúdo circula em redes sociais ]</div>
+          <p>A internet abriga comunidades — muitas vezes em formato de grupos fechados, fóruns e perfis privados — que normalizam e até incentivam a automutilação e pensamentos suicidas. Esses conteúdos circulam especialmente em plataformas como TikTok, Instagram e Discord.</p>
+          <p>Segundo a pesquisa TIC Kids Online Brasil 2024, <span class="stat-inline">10% das crianças e adolescentes de 11 a 17 anos</span> relataram ter visto conteúdo sobre "formas de se machucar" online, e <span class="stat-inline">6%</span> viram conteúdo sobre maneiras de cometer suicídio. Esses conteúdos não precisam ser buscados ativamente — o algoritmo pode recomendar progressivamente esse tipo de material para jovens que demonstrem sinais de tristeza ou ansiedade em seu comportamento de consumo.</p>
+          <div class="warn-box">⚠️ Este é um tema sensível que exige atenção imediata. Se você suspeita que seu filho está se automutilando ou pensando em suicídio, busque apoio profissional o quanto antes.</div>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Sinais físicos e comportamentais que pais e educadores devem observar ]</div>
+          <ul>
+            <li>Marcas inexplicáveis no corpo, especialmente nos braços, cobertos mesmo em dias quentes</li>
+            <li>Mudança brusca de humor, isolamento e perda de interesse em atividades que gostava</li>
+            <li>Frases sobre se sentir um peso, não querer mais estar aqui ou que "seria melhor sem mim"</li>
+            <li>Consumo de músicas, vídeos ou conteúdos com temas de morte e tristeza de forma intensa</li>
+            <li>Seguir perfis ou grupos com temáticas de automutilação nas redes sociais</li>
+          </ul>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Abordagem empática e sem julgamentos para abrir espaço de diálogo ]</div>
+          <p>Se perceber sinais de alerta, aborde diretamente e com calma: <em>"Estou preocupado com você e quero entender como você está se sentindo."</em> Perguntar diretamente sobre automutilação ou pensamentos suicidas <strong>não aumenta o risco</strong> — pelo contrário, abre o espaço para que a criança se sinta ouvida.</p>
+          <p>Evite minimizar com frases como "isso vai passar" ou "você tem tudo para ser feliz". Ouça sem julgamento e deixe claro que você está do lado dela, não importa o que for.</p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Canais de ajuda e quando buscar apoio profissional ]</div>
+          <ul>
+            <li>Busque um psicólogo ou psiquiatra infantojuvenil — não deixe para depois</li>
+            <li>Denuncie perfis que promovam automutilação diretamente nas plataformas usando o botão "Denunciar"</li>
+          </ul>
+          <div class="info-box">📞 <strong>CVV — Centro de Valorização da Vida:</strong> ligue 188 (gratuito, 24h) ou acesse <a href="https://www.cvv.org.br" target="_blank" rel="noopener">cvv.org.br</a> para chat online.<br><br>📞 <strong>Disque 100:</strong> para situações de violência e vulnerabilidade de crianças e adolescentes.</div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="risk-card" id="card-transtornos">
+  <div class="risk-card risk-card-amber" id="card-transtornos">
     <button class="card-header" onclick="toggleCard('card-transtornos')" aria-expanded="false">
       <div class="card-icon icon-bg-amber">🟠</div>
       <div class="card-meta">
         <div class="card-tag">Conteúdo de risco à saúde</div>
         <div class="card-title">Distúrbios Alimentares e Padrões de Beleza</div>
-        <div class="card-subtitle">20% viram conteúdo sobre "formas de ficar muito magro" — o risco mais reportado na pesquisa</div>
+        <div class="card-subtitle">20% viram conteúdo sobre "formas de ficar muito magro" — o mais reportado na pesquisa</div>
       </div>
       <span class="card-arrow" aria-hidden="true">▾</span>
     </button>
@@ -624,19 +412,33 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ Como filtros, comparações e influencers afetam a autoimagem de crianças e adolescentes ]</div>
+          <p>O conteúdo sobre "formas de ficar muito magro" foi o risco mais reportado pelas crianças e adolescentes na pesquisa TIC Kids Online Brasil 2024: <span class="stat-inline">20% dos usuários de 11 a 17 anos</span> afirmaram ter visto esse tipo de material online.</p>
+          <p>Redes sociais como Instagram e TikTok expõem crianças e adolescentes a um fluxo constante de imagens com padrões de corpo irreais — muitas vezes editadas ou geradas por filtros — e a influencers que promovem dietas restritivas, jejum extremo e comportamentos de risco. Com o tempo, esse bombardeio afeta a autoimagem e pode ser um fator desencadeador de transtornos como anorexia e bulimia.</p>
+          <p>A pesquisa também aponta que <span class="stat-inline">45% dos usuários de 11 a 17 anos</span> concordaram que a primeira publicação que veem nas redes sociais é a última postada por um de seus contatos — o que indica que o algoritmo, e não a escolha do usuário, dita o que é visto.</p>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Mudanças no comportamento alimentar e na relação com o próprio corpo ]</div>
+          <ul>
+            <li>Comentários frequentes e negativos sobre o próprio corpo ou peso</li>
+            <li>Recusa de refeições, comer escondido ou ir ao banheiro logo após comer</li>
+            <li>Seguir perfis de dietas radicais, "transformações de corpo" ou influencers com foco extremo em magreza</li>
+            <li>Comparar o próprio corpo constantemente com imagens vistas na internet</li>
+            <li>Irritabilidade ou ansiedade relacionadas à alimentação e à aparência</li>
+          </ul>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Como desconstruir padrões irreais de beleza com a criança ]</div>
+          <p>Converse sobre como as imagens nas redes sociais são construídas: filtros, iluminação, ângulos e edição digital criam corpos que não existem na realidade. Mostrar ferramentas de edição de foto pode ser mais eficaz do que apenas falar sobre isso.</p>
+          <p>Evite fazer comentários sobre peso — nem do filho, nem dos outros. O ambiente em casa molda a relação que a criança vai ter com o próprio corpo.</p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Recursos e onde buscar ajuda especializada ]</div>
+          <ul>
+            <li>Se notar sinais de transtorno alimentar, procure um médico pediatra ou nutricionista especializado em crianças e adolescentes</li>
+            <li>Incentive o filho a "limpar" os perfis que segue: deixar de seguir contas que fazem sentir mal é uma habilidade digital importante</li>
+            <li>Use a função de "Não tenho interesse" ou "Ver menos conteúdo assim" nas redes sociais para treinar o algoritmo</li>
+          </ul>
+          <div class="info-box">📞 <strong>Aliança Nacional de Transtornos Alimentares:</strong> acesse <a href="https://www.aliancanacionaltda.org.br" target="_blank" rel="noopener">aliancanacionaltda.org.br</a> para orientação e encaminhamento especializado.</div>
         </div>
       </div>
     </div>
@@ -644,14 +446,12 @@
 
 </div>
 
-<!-- RISCOS: SEÇÃO 3 — CONDUTA -->
+<!-- SEÇÃO 3: CONDUTA -->
 <div class="section-divider"><hr></div>
-<div class="section-label">
-  <h2>Riscos de Conduta entre Pares</h2>
-</div>
+<div class="section-label"><h2>Riscos de Conduta entre Pares</h2></div>
 <div class="risks-grid">
 
-  <div class="risk-card" id="card-cyberbullying">
+  <div class="risk-card risk-card-purple" id="card-cyberbullying">
     <button class="card-header" onclick="toggleCard('card-cyberbullying')" aria-expanded="false">
       <div class="card-icon icon-bg-purple">🟣</div>
       <div class="card-meta">
@@ -665,25 +465,42 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ Diferença entre bullying e cyberbullying, e como as redes amplificam o dano ]</div>
+          <p>Cyberbullying é qualquer forma de agressão, humilhação ou discriminação praticada de forma repetida contra uma pessoa por meio de dispositivos digitais — celular, computador, videogame. Ele pode acontecer por mensagens ofensivas, exclusão de grupos, divulgação de fotos íntimas ou boatos falsos.</p>
+          <p>Diferente do bullying presencial, o cyberbullying tem características que o tornam mais difícil de controlar: acontece 24 horas por dia, pode ser anônimo e o conteúdo publicado pode se espalhar rapidamente para centenas de pessoas.</p>
+          <p>A pesquisa TIC Kids Online Brasil 2024 revela que <span class="stat-inline">12% das crianças e adolescentes</span> relataram ter sido tratados de forma ofensiva online. Entre os tipos reportados: recebimento de mensagens ofensivas (7%), exclusão de grupo ou atividade na internet (4%) e recebimento de ameaças (2%). As discriminações mais vistas foram por cor e raça (25%), aparência física (19%) e por ser pobre (14%).</p>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Comportamentos que indicam que a criança está sofrendo ou praticando cyberbullying ]</div>
+          <ul>
+            <li>Fica visivelmente perturbado após usar o celular ou computador</li>
+            <li>Evita falar sobre o que acontece na escola ou com os amigos</li>
+            <li>Para de usar as redes sociais repentinamente, ou ao contrário, passa a usar de forma compulsiva</li>
+            <li>Apresenta queda no desempenho escolar, insônia ou recusa em ir à escola</li>
+            <li>Muda de comportamento: fica mais isolado, agressivo ou ansioso</li>
+          </ul>
+          <div class="warn-box">📊 Apenas 31% das crianças que sofreram situações ofensivas online contaram para seus responsáveis. O principal motivo é o medo de ter o celular confiscado ou de "piorar a situação".</div>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Como abordar tanto a criança vítima quanto a que pratica o bullying ]</div>
+          <p>Crie um ambiente onde a criança sinta que pode contar sem ser punida. Diga com frequência: <em>"Se alguém disser algo que te machuque online, você pode me contar. Não vou tirar seu celular — vou te ajudar a resolver."</em></p>
+          <p>Se a criança estiver praticando bullying, aborde sem explosão de raiva: entenda o que motivou o comportamento e trabalhe empatia. Punição sem diálogo raramente resolve.</p>
+          <p>Informe a escola sempre que identificar cyberbullying envolvendo colegas — mesmo que seja entre alunos fora do horário escolar, as escolas têm papel ativo na mediação.</p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Como registrar provas, bloquear, denunciar e quando acionar a escola ]</div>
+          <ul>
+            <li><strong>Documente:</strong> tire capturas de tela de todas as mensagens e publicações ofensivas antes de qualquer outra ação</li>
+            <li><strong>Bloqueie</strong> o agressor nas plataformas onde o bullying está acontecendo</li>
+            <li><strong>Denuncie</strong> o conteúdo diretamente na plataforma (botão "Denunciar" em cada publicação ou perfil)</li>
+            <li>Em casos graves — ameaças, divulgação de fotos íntimas — registre um boletim de ocorrência online em <a href="https://www.delegaciaonline.sp.gov.br" target="_blank" rel="noopener">delegaciaonline.sp.gov.br</a> ou na delegacia mais próxima</li>
+            <li>Denúncias também podem ser feitas pelo site da <strong>SaferNet Brasil</strong>: <a href="https://new.safernet.org.br" target="_blank" rel="noopener">safernet.org.br</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="risk-card" id="card-sharenting">
+  <div class="risk-card risk-card-slate" id="card-sharenting">
     <button class="card-header" onclick="toggleCard('card-sharenting')" aria-expanded="false">
       <div class="card-icon icon-bg-slate">⚪</div>
       <div class="card-meta">
@@ -697,19 +514,34 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ O que é sharenting, como fotos de crianças podem ser usadas indevidamente e o conceito de pegada digital ]</div>
+          <p><em>Sharenting</em> é a prática de compartilhar fotos, vídeos e informações sobre crianças nas redes sociais — seja pelos próprios pais, seja pelas próprias crianças. O termo une as palavras em inglês <em>share</em> (compartilhar) e <em>parenting</em> (parentalidade).</p>
+          <p>Cada imagem publicada deixa uma pegada digital permanente. Fotos com uniforme escolar revelam a escola da criança. Fotos em casa podem indicar o endereço. Rostos publicados podem ser usados indevidamente por terceiros. E uma criança que cresce com sua imagem constantemente exposta pode ter dificuldade de estabelecer seus próprios limites de privacidade no futuro.</p>
+          <p>A pesquisa aponta que <span class="stat-inline">36% dos usuários de 9 a 17 anos</span> já postaram na internet um texto, imagem ou vídeo de autoria própria — e que esse número cresce conforme a idade.</p>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Comportamentos de exposição excessiva que merecem atenção ]</div>
+          <ul>
+            <li>A criança posta fotos com localização ativada, revelando onde mora, estuda ou frequenta</li>
+            <li>Compartilha a rotina diária em stories — horário de saída de casa, trajeto até a escola</li>
+            <li>Aceita desafios virais que pedem informações pessoais ou imagens comprometedoras</li>
+            <li>Publica fotos com roupas íntimas ou em situações que seriam privadas</li>
+          </ul>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Como ensinar sobre privacidade e consentimento de imagem desde cedo ]</div>
+          <p>Use a metáfora da tatuagem: <em>"O que você posta na internet é como uma tatuagem — mesmo que você apague depois, alguém pode ter salvo antes. Pense se você ainda vai querer isso daqui a 10 anos."</em></p>
+          <p>Ensine a perguntar antes de postar: <em>"Essa foto mostra onde eu moro ou estudo? Tem alguém nessa foto que não autorizou? Eu me sentiria bem se minha avó visse isso?"</em></p>
+          <p>E como pais, dê o exemplo: pergunte ao seu filho antes de postar a foto dele no seu próprio perfil.</p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Boas práticas para publicação de imagens de crianças nas redes ]</div>
+          <ul>
+            <li>Desative a localização automática nas configurações do celular e dos aplicativos de câmera</li>
+            <li>Configure os perfis do filho como <strong>privados</strong> em todas as redes sociais</li>
+            <li>Revise periodicamente a lista de seguidores: a criança conhece pessoalmente todos que a seguem?</li>
+            <li>Combine regras claras: nenhuma foto postada sem checar com um adulto, até uma certa idade</li>
+          </ul>
+          <div class="info-box">💡 No Instagram e TikTok é possível desativar o compartilhamento de localização por publicação. Procure nas configurações de cada post antes de publicar.</div>
         </div>
       </div>
     </div>
@@ -717,14 +549,12 @@
 
 </div>
 
-<!-- RISCOS: SEÇÃO 4 — CONTRATO / DEPENDÊNCIA -->
+<!-- SEÇÃO 4: DEPENDÊNCIA E GOLPES -->
 <div class="section-divider"><hr></div>
-<div class="section-label">
-  <h2>Riscos de Dependência e Golpes</h2>
-</div>
+<div class="section-label"><h2>Riscos de Dependência e Golpes</h2></div>
 <div class="risks-grid">
 
-  <div class="risk-card" id="card-dependencia">
+  <div class="risk-card risk-card-teal" id="card-dependencia">
     <button class="card-header" onclick="toggleCard('card-dependencia')" aria-expanded="false">
       <div class="card-icon icon-bg-teal">🩵</div>
       <div class="card-meta">
@@ -738,25 +568,48 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ Como aplicativos são projetados para criar dependência e o que isso causa no desenvolvimento da criança ]</div>
+          <p>Aplicativos e redes sociais são projetados por equipes de engenheiros e psicólogos para maximizar o tempo que os usuários passam neles. Recursos como rolagem infinita, notificações, curtidas e a imprevisibilidade do feed ativam o mesmo mecanismo cerebral de recompensa que cria outros tipos de dependência.</p>
+          <p>A pesquisa TIC Kids Online Brasil 2024 revela dados preocupantes sobre o uso excessivo entre crianças e adolescentes de 11 a 17 anos:</p>
+          <ul>
+            <li><span class="stat-inline">24%</span> tentaram passar menos tempo na internet e não conseguiram</li>
+            <li><span class="stat-inline">22%</span> passaram menos tempo do que deveriam com família e amigos por causa da internet</li>
+            <li><span class="stat-inline">22%</span> se pegaram navegando sem estar realmente interessados no que viam</li>
+            <li><span class="stat-inline">16%</span> se sentiram mal quando não podiam usar a internet</li>
+            <li><span class="stat-inline">15%</span> deixaram de comer ou dormir por causa do uso excessivo</li>
+          </ul>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Quando o tempo de tela deixa de ser lazer e passa a ser um problema comportamental ]</div>
+          <ul>
+            <li>Irritação intensa ou agressividade quando o celular é retirado ou o acesso é limitado</li>
+            <li>Dificuldade em se concentrar em tarefas escolares ou conversas presenciais</li>
+            <li>Privação de sono para usar o celular à noite</li>
+            <li>Perda de interesse em hobbies, amizades e atividades físicas que antes gostava</li>
+            <li>Mentir sobre quanto tempo passou usando o celular ou o que fez online</li>
+          </ul>
+          <div class="warn-box">📱 A Sociedade Brasileira de Pediatria recomenda: nenhum tempo de tela antes dos 2 anos; até 1 hora por dia para crianças de 2 a 5 anos; até 2 horas por dia para crianças de 6 a 10 anos — sempre com supervisão.</div>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Como estabelecer limites de uso sem criar conflito ]</div>
+          <p>Evite abordar o assunto durante ou logo após o uso do celular, quando a resistência é maior. Escolha um momento calmo e neutro para combinar as regras juntos.</p>
+          <p>Inclua a criança na construção dos limites: <em>"Quantas horas você acha que é um tempo justo no celular por dia? O que poderíamos fazer juntos no tempo em que você ficaria offline?"</em> Regras construídas em conjunto têm mais chance de serem respeitadas.</p>
+          <p>Dê o exemplo: crianças que veem os pais constantemente no celular têm muito mais dificuldade de aceitar limites.</p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Ferramentas de controle de tempo de tela disponíveis no Android e iPhone ]</div>
+          <ul>
+            <li><strong>iPhone:</strong> vá em <em>Ajustes → Tempo de Uso</em> para definir limites por aplicativo e horários sem tela</li>
+            <li><strong>Android:</strong> vá em <em>Configurações → Bem-estar Digital</em> para ver o tempo de uso e criar restrições</li>
+            <li>Estabeleça zonas livres de celular em casa: mesa de jantar, quarto após determinado horário</li>
+            <li>Coloque o celular para carregar fora do quarto da criança durante a noite</li>
+            <li>Incentive atividades offline que gerem prazer real: esporte, arte, culinária, leitura</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="risk-card" id="card-golpes">
+  <div class="risk-card risk-card-green" id="card-golpes">
     <button class="card-header" onclick="toggleCard('card-golpes')" aria-expanded="false">
       <div class="card-icon icon-bg-green">🟢</div>
       <div class="card-meta">
@@ -770,19 +623,40 @@
       <div class="card-body-inner">
         <div class="subsection">
           <h4>📌 O que é</h4>
-          <div class="placeholder-block">[ Tipos de golpes mais comuns que miram crianças e adolescentes: skins de jogos, rifas falsas, links maliciosos ]</div>
+          <p>Crianças e adolescentes são alvos frequentes de golpes digitais porque ainda estão desenvolvendo o pensamento crítico necessário para identificar armadilhas. Os golpes mais comuns que miram esse público incluem:</p>
+          <ul>
+            <li><strong>Golpes em jogos:</strong> promessas de "skins grátis", "moedas infinitas" ou "contas premium" que pedem login e senha do jogo — ou até dados do cartão dos pais</li>
+            <li><strong>Sorteios falsos:</strong> publicações no Instagram ou TikTok prometendo prêmios em troca de compartilhamento, cadastro ou pagamento de "taxa"</li>
+            <li><strong>Phishing:</strong> links falsos enviados por WhatsApp que imitam sites conhecidos para roubar dados pessoais ou bancários</li>
+            <li><strong>Apostas online:</strong> a pesquisa identificou influencers mirins — crianças de 6 a 17 anos — promovendo cassinos online no Instagram, com estratégias como "depósito mínimo baixo" e "só não ganha quem não quer"</li>
+          </ul>
+          <div class="warn-box">⚠️ O Instituto Alana identificou em 2024 que o Instagram permitia que crianças promovessem apostas ilegais em seus perfis, sem mecanismo eficaz de denúncia ou remoção do conteúdo.</div>
         </div>
         <div class="subsection">
           <h4>⚠️ Sinais de alerta</h4>
-          <div class="placeholder-block">[ Como identificar que a criança pode ter caído em um golpe ou ter dados comprometidos ]</div>
+          <ul>
+            <li>A criança menciona ter ganhado um "prêmio" online ou ter acesso a um benefício especial em jogo</li>
+            <li>Pede dados do cartão dos pais "só para confirmar a idade" em algum site ou jogo</li>
+            <li>Recebe cobranças inesperadas na fatura do cartão ou na conta de aplicativos</li>
+            <li>Fica agitada ou com medo ao ser questionada sobre o que fez no celular</li>
+          </ul>
         </div>
         <div class="subsection">
           <h4>💬 Como conversar com seu filho</h4>
-          <div class="placeholder-block">[ Como ensinar pensamento crítico sobre promoções e pedidos de dados pessoais ]</div>
+          <p>Ensine a regra de ouro: <em>"Se parece bom demais para ser verdade, provavelmente é golpe."</em> Isso vale para skins grátis, prêmios em sorteios e qualquer coisa que peça senha ou dados do cartão.</p>
+          <p>Pratique junto: mostre um exemplo de mensagem de phishing e pergunte o que tem de estranho nela. Ensinar a identificar sinais — erros de ortografia, links suspeitos, urgência exagerada — é mais eficaz do que apenas proibir.</p>
+          <p>Deixe claro: <em>"Você nunca vai se meter em problema por me contar que clicou em um link errado. O problema é esconder."</em></p>
         </div>
         <div class="subsection">
           <h4>🛡️ O que fazer</h4>
-          <div class="placeholder-block">[ Onde registrar ocorrências e como proteger contas ]</div>
+          <ul>
+            <li>Nunca salve dados de cartão de crédito em aplicativos usados por crianças</li>
+            <li>Ative a autenticação em dois fatores (2FA) em todas as contas do filho e nos jogos que ele usa</li>
+            <li>Se dados foram comprometidos: troque as senhas imediatamente e entre em contato com o banco para cancelar o cartão</li>
+            <li>Registre golpes no site do <strong>Procon</strong> ou na <strong>Polícia Civil</strong> do seu estado</li>
+            <li>Denuncie conteúdo de apostas voltado a crianças em: <a href="https://new.safernet.org.br" target="_blank" rel="noopener">safernet.org.br</a></li>
+          </ul>
+          <div class="info-box">💡 Para verificar se um link é seguro antes de clicar, acesse <a href="https://www.urlvoid.com" target="_blank" rel="noopener">urlvoid.com</a> e cole o endereço suspeito.</div>
         </div>
       </div>
     </div>
@@ -811,13 +685,13 @@
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <p>
     Conteúdo baseado na <strong>Pesquisa TIC Kids Online Brasil 2024</strong>, realizada pelo Cetic.br | NIC.br.<br>
     Este guia tem finalidade educativa e não substitui orientação profissional especializada.<br>
     <a href="https://cetic.br" target="_blank" rel="noopener">cetic.br</a> &nbsp;·&nbsp;
-    <a href="https://www.safernet.org.br" target="_blank" rel="noopener">SaferNet Brasil</a>
+    <a href="https://www.safernet.org.br" target="_blank" rel="noopener">SaferNet Brasil</a> &nbsp;·&nbsp;
+    <a href="https://www.cvv.org.br" target="_blank" rel="noopener">CVV</a>
   </p>
 </footer>
 
@@ -828,23 +702,17 @@
     const btn  = card.querySelector('.card-header');
     const isOpen = card.classList.contains('open');
 
-    // fecha todos
     document.querySelectorAll('.risk-card.open').forEach(c => {
       c.classList.remove('open');
       c.querySelector('.card-body').style.maxHeight = null;
       c.querySelector('.card-header').setAttribute('aria-expanded', 'false');
     });
 
-    // abre o clicado (se estava fechado)
     if (!isOpen) {
       card.classList.add('open');
       body.style.maxHeight = body.scrollHeight + 'px';
       btn.setAttribute('aria-expanded', 'true');
-
-      // scroll suave para o card
-      setTimeout(() => {
-        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 50);
+      setTimeout(() => { card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 50);
     }
   }
 </script>
